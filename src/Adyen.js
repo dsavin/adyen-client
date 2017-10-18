@@ -11,7 +11,7 @@ import moment from 'moment'
 
 const Config = {
     production: {
-        endpoint: '',
+        endpoint: 'https://pal-live.adyen.com/pal/servlet/',
         production: true
     },
     development: {
@@ -23,37 +23,37 @@ const Config = {
 const Specs = {
     authorizePayment: {
         method: 'authorizePayment',
-        path: 'Payment/v12/authorise',
+        path: 'Payment/v30/authorise',
         fields: {}
     },
     authorize3dPayment: {
         method: 'authorize3dPayment',
-        path: 'Payment/v12/authorise3d',
+        path: 'Payment/v30/authorise3d',
         fields: {}
     },
     getRecurringData: {
         method: 'listRecurringDetails',
-        path: 'Recurring/v12/listRecurringDetails',
+        path: 'Recurring/v30/listRecurringDetails',
         fields: {}
     },
     disableRecurring: {
         method: 'disableRecurring',
-        path: 'Recurring/v12/disable',
+        path: 'Recurring/v30/disable',
         fields: {}
     },
     capture: {
         method: 'capture',
-        path: 'Payment/v12/capture',
+        path: 'Payment/v30/capture',
         fields: {}
     },
     refund: {
         method: 'refund',
-        path: 'Payment/v12/refund',
+        path: 'Payment/v30/refund',
         fields: {}
     },
     cancelOrRefund: {
         method: 'cancelOrRefund',
-        path: 'Payment/v12/cancelOrRefund',
+        path: 'Payment/v30/cancelOrRefund',
         fields: {}
     }
 }
